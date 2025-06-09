@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Net.Art Page</title>
+  <title>Window page</title>
   <style>
     body {
       background-color: #f0f0f0;
@@ -17,188 +17,69 @@
       height: 900px;
       margin: 0 auto;
       position: relative;
-      background-color: #e1ff00;
+      background-color: #d8ffd3;
     }
 
     .layer {
       position: absolute;
     }
 
-    #circle {
-      width: 200px;
-      height: 200px;
-      background-color: rgba(255, 100, 100, 0.7);
-      border-radius: 50%;
-      top: 100px;
-      left: 100px;
-      z-index: 1;
-      animation: fadeIn 3s ease-in-out infinite alternate; 
-    }
-
-    #circle2 {
+    .image-layer {
       width: 300px;
-      height: 300px;
-      background-color: rgba(255, 246, 0, 0.7);
-      border-radius: 50%;
-      top: 200px;
-      left: 500px;
-      z-index: 1;
-      animation: fadeIn 3s ease-in-out infinite alternate; 
-    }      
-      
-    #square {
-      width: 250px;
-      height: 250px;
-      background-color: rgba(100, 100, 255, 0.7);
-      top: 150px;
-      left: 200px;
-      z-index: 2;
-      animation: fadeIn 7s ease-in-out infinite alternate; 
-    }
-      
-    #square2 {
-      width: 350px;
       height: 200px;
-      background-color: rgba(255, 100, 195, 0.6);
-      top: 350px;
-      left: 700px;
-      z-index: 2;
-      animation: fadeIn 7s ease-in-out infinite alternate; 
-    }      
-
-    #triangle {
-      width: 0;
-      height: 0;
-      border-left: 125px solid transparent;
-      border-right: 125px solid transparent;
-      border-bottom: 250px solid rgba(100, 255, 100, 0.7);
-      top: 300px;
-      left: 150px;
-      z-index: 3;
-      animation: fadeIn 5s ease-in-out infinite alternate;    
     }
-      
-    #triangle2 {
-      width: 0;
-      height: 0;
-      border-left: 225px solid transparent;
-      border-right: 125px solid transparent;
-      border-bottom: 250px solid rgba(0, 255, 246, 0.63);
-      top: 200px;
-      left: 950px;
-      z-index: 3;
-      animation: fadeIn 5s ease-in-out infinite alternate;    
-    }      
-      
-   #gears {
-            
-    position: absolute;
-    top: 200px;
-    left: 50px;
-    z-index: 0;
-    }      
 
-   #gears2 {
-            
-    position: absolute;
-    top: 300px;
-    left: 300px;
-    z-index: 0;
-    }     
-      
-   #gears3 {
-            
-    position: absolute;
-    top: 123px;
-    left: 500px;
-    z-index: 0;
-    }        
-    
-   #gears4 {
-            
-    position: absolute;
-    top: 450px;
-    left: 605px;
-    z-index: 0;
-    }       
-      
-   #gears5 {
-            
-    position: absolute;
-    top: 254px;
-    left: 670px;
-    z-index: 0;
-    }              
-      
-   #gears6 {
-            
-    position: absolute;
-    top: 240px;
-    left: 1070px;
-    z-index: 0;
-    }           
-      
+    #image1 { top: 50px; left: 100px; z-index: 1; }
+    #image2 { top: 100px; left: 400px; z-index: 2; }
+    #image3 { top: 150px; left: 700px; z-index: 3; }
+    #image4 { top: 200px; left: 200px; z-index: 4; }
+    #image5 { top: 250px; left: 500px; z-index: 5; }
+    #image6 { top: 300px; left: 800px; z-index: 6; }
+    #image7 { top: 350px; left: 300px; z-index: 7; }
+    #image8 { top: 400px; left: 600px; z-index: 8; }
+    #image9 { top: 450px; left: 900px; z-index: 9; }
+    #image10 { top: 500px; left: 400px; z-index: 10; }
+    #image11 { top: 550px; left: 700px; z-index: 11; }
+
     #text1 {
-      top: 600px;
+      top: 800px;
       left: 100px;
       font-size: 48px;
       color: black;
-      z-index: 4;
-      animation: fadeIn 5s ease-in-out infinite alternate;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0.3; }
-      to { opacity: 1; }
+      z-index: 12;
     }
 
     #text2 {
-      top: 670px;
-      left: 104px;
+      top: 850px;
+      left: 100px;
       font-size: 20px;
       color: black;
-      z-index: 5;
+      z-index: 13;
     }
+
+    #text2 a {
+      color: black;
+      text-decoration: none;
+    }
+
   </style>
 </head>
 
 <body>
   <div id="container">
-    <!-- This net.art page is a digital composition exploring balance and motion using only HTML/CSS shapes. -->
-    <div id="circle" class="layer"></div>
-    <div id="circle2" class="layer"></div>  
-    <div id="square" class="layer"></div>
-    <div id="square2" class="layer"></div>      
-    <div id="triangle" class="layer"></div>
-    <div id="triangle2" class="layer"></div>      
-      
-    <div id="gears">
-        <img src="images/green-gear.gif" height="300px" width="300px" alt="gear">
-    </div>  
-      
-    <div id="gears2">
-        <img src="images/rorange-gear.gif" height="350px" width="350px" alt="gear">
-    </div>     
-      
-    <div id="gears3">
-        <img src="images/pink-gear.gif" height="250px" width="250px" alt="gear">
-    </div>    
-      
-    <div id="gears4">
-        <img src="images/green-gear.gif" height="250px" width="250px" alt="gear">
-    </div>     
-      
-    <div id="gears5">
-        <img src="images/rorange-gear.gif" height="250px" width="450px" alt="gear">
-    </div>      
-      
-    <div id="gears6">
-        <img src="images/green-gear.gif" height="450px" width="250px" alt="gear">
-    </div>           
+    <img src="images/images-31.jpeg"  class="layer image-layer" id="image1">
+    <img src="images/images-21.jpeg"  class="layer image-layer" id="image2">
+    <img src="images/images-22.jpeg"  class="layer image-layer" id="image3">
+    <img src="images/images-23.jpeg"  class="layer image-layer" id="image4">
+    <img src="images/images-24.jpeg"  class="layer image-layer" id="image5">
+    <img src="images/images-25.jpg"  class="layer image-layer" id="image6">
+    <img src="images/images-26.jpg"  class="layer image-layer" id="image7">
+    <img src="images/images-27.jpg"  class="layer image-layer" id="image8">
+    <img src="images/images-28.jpeg" class="layer image-layer" id="image9">
+    <img src="images/images-29.jpg"  class="layer image-layer" id="image10">
+    <img src="images/images-30.jpeg"  class="layer image-layer" id="image11">
 
-    <div id="text1" class="layer">Get Those Gears Turning Now</div>
-    
-    <div id="text2" class="layer"><a href="Collage2.html">We've got to keep the color, shape, and motion on!</a></div>
+    <div id="text1" class="layer">Choose wisely</div>
   </div>
 </body>
 
