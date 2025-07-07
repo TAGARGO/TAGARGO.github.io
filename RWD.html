@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>RWD</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <h1 class="title">RWD</h1>
-        <p>responsive webpage</p>
-        
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f8f8f8;
+    }
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .gallery a img {
+      width: 150px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .gallery a img:hover {
+      transform: scale(1.1);
+    }
+    .attribution {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #555;
+    }
+    
+    /* Media Queries */
+    @media (max-width: 599px) {
+      .gallery a img {
+        width: 100px;
+      }
+      body {
+        background-color: #e0f7fa;
+      }
+    }
+    @media (min-width: 600px) and (max-width: 1080px) {
+      .gallery a img {
+        width: 150px;
+      }
+      body {
+        background-color: #ffe0b2;
+      }
+    }
+    @media (min-width: 1081px) {
+      .gallery a img {
+        width: 200px;
+      }
+      body {
+        background-color: #dcedc8;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Image Gallery</h1>
+  <p>This assignment, featuring Pandora the cat, involved creating a responsive webpage that features thumbnail images, which open full-size versions when clicked.</p>
+
+  <div class="gallery">
+    <a href="panda/panda1.jpeg" target="_blank"><img src="panda/panda1.jpeg" alt="Image 1"></a>
+    <a href="panda/panda2.jpeg" target="_blank"><img src="panda/panda2.jpeg" alt="Image 2"></a>
+    <a href="panda/panda3.jpeg" target="_blank"><img src="panda/panda3.jpeg" alt="Image 3"></a>
+    <a href="panda/panda4.jpeg" target="_blank"><img src="panda/panda4.jpeg" alt="Image 4"></a>
+    <a href="panda/panda5.jpeg" target="_blank"><img src="panda/panda5.jpeg" alt="Image 5"></a>
+    <a href="panda/panda7.jpeg" target="_blank"><img src="panda/panda7.jpeg" alt="Image 6"></a>
+    <a href="panda/panda6.jpeg" target="_blank"><img src="panda/panda6.jpeg" alt="Image 7"></a>
+  </div>
+
+  <div class="attribution">
+    &copy; 2024 Images of Pandora cat
+  </div>
+</body>
 </html>
