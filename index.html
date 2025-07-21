@@ -1,35 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>WBA</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <h1 class="title">Leo Mueller - Portfolio</h1>
-        <p>Hello internet! I am a designer in Pensacola Florida. Now I am a web designer without a location!</p>
-      <br />
-        <a href="Page1.html">Page 1</a>
-      <br />
-        <a href="Collage.html">net.art collage</a>   
-    <br />
-        <a href="404.html">404</a>     
-    <br />
-        <a href="GIF-showcase.html">GIF showcase</a>   
-    <br />
-        <a href="story/Story.html">Story</a>   
-    <br />
-        <a href="citation.html">Citations</a>     
-    <br />
-        <a href="404.html">P5 Landscape</a>    
-    <br />
-        <a href="SelfPortrait.html">P5 Portrait</a>       
-    <br />
-        <a href="RWD.html">Responsive Web Design</a>        
-    <br />
-        <a href="404.html">Portfolio Wireframe</a>     
-    <br />
-        <a href="404.html">Style Guide</a>     
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leo Mueller - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      padding: 0.75rem 0;
+      margin-bottom: 2rem;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 12s linear infinite;
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      padding: 0;
+    }
+
+    .link-list a {
+      display: block;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: background-color 0.2s;
+    }
+
+    .link-list a:hover {
+      background-color: #e6f0ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="marquee-container">
+    <div class="marquee-text">Leo Mueller – Portfolio &nbsp;&nbsp;&nbsp;&nbsp; Leo Mueller – Portfolio &nbsp;&nbsp;&nbsp;&nbsp;</div>
+  </div>
+
+  <div class="container">
+    <p>Hello internet! I am a designer in Pensacola, Florida. Now I am a web designer without a location!</p>
+
+    <div class="link-list">
+      <a href="Page1.html">Page 1</a>
+      <a href="Collage.html">net.art collage</a>
+      <a href="404.html">404</a>
+      <a href="GIF-showcase.html">GIF showcase</a>
+      <a href="story/Story.html">Story</a>
+      <a href="citation.html">Citations</a>
+      <a href="404.html">P5 Landscape</a>
+      <a href="SelfPortrait.html">P5 Portrait</a>
+      <a href="RWD.html">Responsive Web Design</a>
+      <a href="404.html">Portfolio Wireframe</a>
+      <a href="404.html">Style Guide</a>
+    </div>
+  </div>
+</body>
 </html>
