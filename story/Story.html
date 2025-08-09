@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Story</title>
   <style>
     body, html {
@@ -36,29 +36,53 @@
       background-image: url('images/brain.png'); 
       background-repeat: repeat;
       min-height: 100vh;
+      position: relative;
     }
-    
+
+ 
+    #homeButton {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: inherit;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+      z-index: 1000;
+    }
+
+    #homeButton:hover {
+      background-color: #005fa3;
+    }
   </style>
 </head>
 <body>
   
   <div id="gifOverlay">
-    <img src="images/underwear.gif">
+    <img src="images/underwear.gif" alt="Loading animation" />
   </div>
 
   <div id="pageContent">
+    <a href="index.html" id="homeButton">Home</a>
+
     <h1>Ohh No! You forgot to wear pants today...</h1>
-    <img src="images/disgust2.jpg" style="max-width: 90%; max-height: min-content">
-    <br>
+    <img src="images/disgust2.jpg" style="max-width: 90%; max-height: min-content" alt="Disgusted coworkers" />
+    <br />
     <h2>and your coworkers are disgusted by your ADHD</h2>
     <p>
       What should you do? What happened to your body?
-      <br><br>
-        <a href="store.html">Buy more pants from the store</a>
-      <br><br>
-        <a href="pinch.html">Pinch yourself to see if you're dreaming</a>
-      <br><br>
-        <a href="mother.html">Call your mom for advice</a>
+      <br /><br />
+      <a href="store.html">Buy more pants from the store</a>
+      <br /><br />
+      <a href="pinch.html">Pinch yourself to see if you're dreaming</a>
+      <br /><br />
+      <a href="mother.html">Call your mom for advice</a>
     </p>
   </div>
 
