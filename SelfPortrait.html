@@ -1,22 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>portrait</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <h1 class="title">Self Portrait</h1>
-        <p>For this assignment, I created a self-portrait using P5's primitive commands to make a static sketch.</p>
-        <a href="https://editor.p5js.org/TAGARGO/sketches/ztCiUmoUz">You can take a look here</a>
-        <br>
-        <iframe src="https://editor.p5js.org/TAGARGO/full/ztCiUmoUz" style="height: 600px; width: 400px"></iframe>
-        <br>
-        <p>This next self portrait has eyes that blink and follow the mouse. He also smiles when you click.</p>
-        <a href="https://editor.p5js.org/TAGARGO/sketches/Slv2FfxcM" >You can take a look here</a>
-        <br>
-        <iframe src="https://editor.p5js.org/TAGARGO/full/Slv2FfxcM" style="height: 600px; width: 400px"></iframe>
-        
-    </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Self Portrait — Leo Mueller</title>
+  <style>
+
+    :root{
+      --bg: #f4f4f4;
+      --text: #222;
+      --muted: #333;
+      --link: #0077cc;
+      --link-hover: #005fa3;
+      --container-max: 600px;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      padding:2rem;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      box-sizing:border-box;
+    }
+
+
+    .top-bar{
+      text-align:right;
+      margin-bottom:1rem;
+    }
+
+    .top-bar .btn{
+      background: var(--link);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-left: 0.5rem;
+      text-decoration: none;
+      display: inline-block;
+      font-family: inherit;
+      transition: background-color .15s ease;
+    }
+
+    .top-bar .btn:hover{ background: var(--link-hover); }
+
+
+    .page-container{
+      max-width: var(--container-max);
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    h1.title{
+      font-size: 2rem;
+      margin: 0 0 1rem 0;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    p, .note {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--muted);
+      margin: 0 0 1rem 0;
+    }
+
+    a.inline-link {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    a.inline-link:hover { text-decoration: underline; }
+
+
+    .iframe-wrap{
+      display:flex;
+      justify-content:center;
+      margin: 1rem 0 1.5rem;
+    }
+    .p5-iframe{
+      width: 400px;
+      height: 600px;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+
+
+    footer{
+      text-align:center;
+      font-size:0.875rem;
+      color:#555;
+      margin-top:2rem;
+      padding-top:1rem;
+      border-top:1px solid #ccc;
+      max-width: var(--container-max);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    footer a { color: var(--link); text-decoration:none; }
+    footer a:hover { text-decoration: underline; }
+
+
+    @media (max-width:480px){
+      .page-container{ padding:1.25rem; }
+      .p5-iframe{ width:100%; height:480px; }
+      .top-bar .btn{ padding:0.45rem 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <a class="btn" href="index.html">Home</a>
+    <a class="btn" href="about.html">About / Contact</a>
+  </div>
+
+  <main class="page-container" role="main">
+    <h1 class="title">Self Portrait</h1>
+
+    <p>For this assignment, I created a self-portrait using P5's primitive commands to make a static sketch.</p>
+    <p><a class="inline-link" href="https://editor.p5js.org/TAGARGO/sketches/ztCiUmoUz" target="_blank" rel="noopener">You can take a look here</a></p>
+
+    <div class="iframe-wrap">
+      <iframe class="p5-iframe"
+        src="https://editor.p5js.org/TAGARGO/full/ztCiUmoUz"
+        title="P5 static self-portrait"
+        loading="lazy"></iframe>
+    </div>
+
+    <p>This next self portrait has eyes that blink and follow the mouse. He also smiles when you click.</p>
+    <p><a class="inline-link" href="https://editor.p5js.org/TAGARGO/sketches/Slv2FfxcM" target="_blank" rel="noopener">You can take a look here</a></p>
+
+    <div class="iframe-wrap">
+      <iframe class="p5-iframe"
+        src="https://editor.p5js.org/TAGARGO/full/Slv2FfxcM"
+        title="P5 interactive self-portrait"
+        loading="lazy"></iframe>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Leo Mueller. Some rights reserved. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
+  </footer>
+
+</body>
 </html>

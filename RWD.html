@@ -3,72 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Image Gallery</title>
+  <title>Pandora Gallery</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f8f8f8;
+      margin: 0;
+      background-color: #fafafa;
+      color: #333;
     }
+
+
+    .top-bar {
+      text-align: right;
+      margin: 1rem;
+      gap: 0.5rem;
+      display: inline-flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    .top-bar .btn {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: inherit;
+      transition: background-color 0.2s ease;
+    }
+
+    .top-bar .btn:hover {
+      background-color: #005fa3;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+
     h1 {
-      text-align: center;
+      font-weight: 700;
+      font-size: 2rem;
     }
+
     p {
+      max-width: 700px;
+      margin: 0 auto 2rem auto;
       text-align: center;
-      max-width: 600px;
-      margin: 0 auto 20px auto;
+      font-size: 1.1rem;
+      color: #555;
     }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 15px;
+      padding: 0 1rem;
     }
+
     .gallery a img {
-      width: 150px;
-      height: auto;
-      transition: transform 0.3s ease;
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .gallery a img:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
-    .attribution {
+
+    footer {
       text-align: center;
-      margin-top: 30px;
-      font-size: 0.9em;
-      color: #555;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      background-color: #f0f0f0;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
     }
-    
-    /* Media Queries */
+
     @media (max-width: 599px) {
       .gallery a img {
-        width: 100px;
-      }
-      body {
-        background-color: #e0f7fa;
+        width: 120px;
       }
     }
+
     @media (min-width: 600px) and (max-width: 1080px) {
       .gallery a img {
-        width: 150px;
-      }
-      body {
-        background-color: #ffe0b2;
+        width: 160px;
       }
     }
+
     @media (min-width: 1081px) {
       .gallery a img {
         width: 200px;
-      }
-      body {
-        background-color: #dcedc8;
       }
     }
   </style>
 </head>
 <body>
-  <h1>Responsive Image Gallery</h1>
-  <p>This assignment, featuring Pandora the cat, involved creating a responsive webpage that features thumbnail images, which open full-size versions when clicked.</p>
+
+  <div class="top-bar">
+    <a class="btn" href="index.html">Home</a>
+    <a class="btn" href="about.html">About / Contact</a>
+  </div>
+
+  <header>
+    <h1>Pandora Gallery</h1>
+    <p>This assignment, featuring Pandora the cat, involved creating a responsive webpage that displays thumbnail images which open the full-size versions when clicked.</p>
+  </header>
 
   <div class="gallery">
     <a href="panda/panda1.jpeg" target="_blank"><img src="panda/panda1.jpeg" alt="Image 1"></a>
@@ -77,11 +125,11 @@
     <a href="panda/panda4.jpeg" target="_blank"><img src="panda/panda4.jpeg" alt="Image 4"></a>
     <a href="panda/panda5.jpeg" target="_blank"><img src="panda/panda5.jpeg" alt="Image 5"></a>
     <a href="panda/panda7.jpeg" target="_blank"><img src="panda/panda7.jpeg" alt="Image 6"></a>
-    <a href="panda/panda6.jpeg" target="_blank"><img src="panda/panda6.jpeg" alt="Image 7"></a>
   </div>
 
-  <div class="attribution">
-    &copy; 2024 Images of Pandora cat
-  </div>
+  <footer>
+    &copy; 2025 Leo Mueller. All rights reserved.
+  </footer>
+
 </body>
 </html>

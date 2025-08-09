@@ -11,6 +11,28 @@
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       background-color: #f4f4f4;
       color: #222;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .top-bar {
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+
+    .about-button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .about-button:hover {
+      background-color: #005fa3;
     }
 
     .marquee-container {
@@ -19,7 +41,7 @@
       white-space: nowrap;
       box-sizing: border-box;
       padding: 0.75rem 0;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     .marquee-text {
@@ -43,10 +65,22 @@
     .container {
       max-width: 600px;
       margin: auto;
+      text-align: center;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      object-fit: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     p {
-      text-align: center;
       font-size: 1rem;
       line-height: 1.5;
       margin-bottom: 2rem;
@@ -75,29 +109,53 @@
     .link-list a:hover {
       background-color: #e6f0ff;
     }
+
+    footer {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #555;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ccc;
+    }
   </style>
 </head>
 <body>
+
+  <div class="top-bar">
+    <button class="about-button" onclick="window.location.href='about.html'">About / Contact</button>
+  </div>
+
   <div class="marquee-container">
-    <div class="marquee-text">Leo Mueller – Portfolio &nbsp;&nbsp;&nbsp;&nbsp; Leo Mueller – Portfolio &nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="marquee-text">
+      Leo Mueller – Portfolio &nbsp;&nbsp;&nbsp;&nbsp; Leo Mueller – Portfolio &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
   </div>
 
   <div class="container">
+    <img 
+      src="images/SelfPortfolio.png" 
+      alt="Portfolio hero image" 
+      class="hero-image" 
+    />
+
     <p>Hello internet! I am a designer in Pensacola, Florida. Now I am a web designer without a location!</p>
 
     <div class="link-list">
-      <a href="Page1.html">Page 1</a>
-      <a href="Collage.html">net.art collage</a>
+      <a href="Page1.html">First Pages</a>
+      <a href="Collage(LandingPage).html">net.art Collage</a>
       <a href="404.html">404</a>
       <a href="GIF-showcase.html">GIF showcase</a>
-      <a href="story/Story.html">Story</a>
-      <a href="citation.html">Citations</a>
-      <a href="404.html">P5 Landscape</a>
+      <a href="Story(LandingPage)).html">Story</a>
       <a href="SelfPortrait.html">P5 Portrait</a>
       <a href="RWD.html">Responsive Web Design</a>
-      <a href="404.html">Portfolio Wireframe</a>
-      <a href="404.html">Style Guide</a>
+
     </div>
   </div>
+
+  <footer>
+    © 2025 Leo Mueller. Some rights reserved. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+  </footer>
+
 </body>
 </html>
