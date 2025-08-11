@@ -15,56 +15,6 @@
       overflow-x: hidden;
     }
 
-    .orb-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: -1;
-    }
-
-    .orb {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(80px);
-      opacity: 0.6;
-      
-    }
-
-    .orb:nth-child(1) {
-      background: #ff7eb9;
-      width: 300px;
-      height: 300px;
-      top: 10%;
-      left: 20%;
-    }
-
-    .orb:nth-child(2) {
-      background: #7afcff;
-      width: 250px;
-      height: 250px;
-      top: 50%;
-      left: 70%;
-    }
-
-    .orb:nth-child(3) {
-      background: #feff9c;
-      width: 200px;
-      height: 200px;
-      top: 80%;
-      left: 40%;
-    }
-
-    .orb:nth-child(4) {
-      background: #9c89ff;
-      width: 350px;
-      height: 350px;
-      top: 30%;
-      left: 5%;
-    }
-
     .top-bar {
       text-align: right;
       margin-bottom: 1rem;
@@ -76,9 +26,9 @@
       border: none;
       padding: 0.5rem 1rem;
       border-radius: 5px;
-      text-decoration: none;
       font-weight: bold;
       cursor: pointer;
+      text-decoration: none;
     }
 
     .about-button:hover {
@@ -91,7 +41,7 @@
       white-space: nowrap;
       box-sizing: border-box;
       padding: 0.75rem 0;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     .marquee-text {
@@ -115,10 +65,22 @@
     .container {
       max-width: 600px;
       margin: auto;
+      text-align: center;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      object-fit: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     p {
-      text-align: center;
       font-size: 1rem;
       line-height: 1.5;
       margin-bottom: 2rem;
@@ -159,12 +121,6 @@
   </style>
 </head>
 <body>
-  <div class="orb-container">
-    <div class="orb"></div>
-    <div class="orb"></div>
-    <div class="orb"></div>
-    <div class="orb"></div>
-  </div>
 
   <div class="top-bar">
     <button class="about-button" onclick="window.location.href='about.html'">About / Contact</button>
@@ -177,19 +133,22 @@
   </div>
 
   <div class="container">
+    <img 
+      src="images/SelfPortfolio.png" 
+      alt="Portfolio hero image" 
+      class="hero-image" 
+    />
+
     <p>Hello internet! I am a designer in Pensacola, Florida. Now I am a web designer without a location!</p>
 
     <div class="link-list">
-      <a href="Page1.html">Page 1</a>
-      <a href="Collage.html">net.art collage</a>
+      <a href="Page1.html">First Pages</a>
+      <a href="Collage(LandingPage).html">net.art Collage</a>
       <a href="404.html">404</a>
       <a href="GIF-showcase.html">GIF showcase</a>
-      <a href="citation.html">Citations</a>
-      <a href="404.html">P5 Landscape</a>
       <a href="SelfPortrait.html">P5 Portrait</a>
       <a href="RWD.html">Responsive Web Design</a>
-      <a href="404.html">Portfolio Wireframe</a>
-      <a href="404.html">Style Guide</a>
+
     </div>
   </div>
 
@@ -197,22 +156,5 @@
     © 2025 Leo Mueller. Some rights reserved. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
   </footer>
 
-  <script>
-    const orbs = document.querySelectorAll('.orb');
-    const orbSpeeds = [
-      { x: 0.1, y: 0.3 },
-      { x: -0.15, y: 0.25 },
-      { x: 0.2, y: -0.2 },
-      { x: -0.1, y: -0.15 }
-    ];
-
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      orbs.forEach((orb, i) => {
-        const speed = orbSpeeds[i];
-        orb.style.transform = `translate(${scrollY * speed.x}px, ${scrollY * speed.y}px)`;
-      });
-    });
-  </script>
 </body>
 </html>
