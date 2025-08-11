@@ -70,6 +70,24 @@
       margin-bottom: 1rem;
     }
 
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      padding: 0.75rem 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 12s linear infinite;
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    
     .about-button {
       background-color: #0077cc;
       color: white;
@@ -115,6 +133,19 @@
     .container {
       max-width: 600px;
       margin: auto;
+      text-align: center;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      object-fit: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     p {
@@ -175,6 +206,13 @@
       Leo Mueller – Portfolio &nbsp;&nbsp;&nbsp;&nbsp; Leo Mueller – Portfolio &nbsp;&nbsp;&nbsp;&nbsp;
     </div>
   </div>
+  
+  <div class="container">
+    <img 
+      src="images/SelfPortfolio.png" 
+      alt="Portfolio hero image" 
+      class="hero-image" 
+         /></div>  
 
   <div class="container">
     <p>Hello internet! I am a designer in Pensacola, Florida. Now I am a web designer without a location!</p>
@@ -184,13 +222,10 @@
       <a href="Collage.html">net.art collage</a>
       <a href="404.html">404</a>
       <a href="GIF-showcase.html">GIF showcase</a>
-      <a href="story/Story.html">Story</a>
-      <a href="citation.html">Citations</a>
       <a href="404.html">P5 Landscape</a>
       <a href="SelfPortrait.html">P5 Portrait</a>
       <a href="RWD.html">Responsive Web Design</a>
-      <a href="404.html">Portfolio Wireframe</a>
-      <a href="404.html">Style Guide</a>
+
     </div>
   </div>
 
